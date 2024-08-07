@@ -1,0 +1,14 @@
+{
+    "builtin": "False",
+    "default_enabled": "True",
+    "type": "extension",
+    "rocket_mode_compatible": "False",
+    "name": "First",
+    "description": "Tentando fazer algo pela primeira vez - Ricardo Braga",
+    "author": "Ricardo Braga",
+    "author_profile": "https://github.com/rick-eth",
+    "url": "https://github.com/ErikFrits/EF-Tutor.git",
+    "website": "https://www.youtube.com/c/ErikFrits",
+    "image": "",
+    "dependencies": []
+}
