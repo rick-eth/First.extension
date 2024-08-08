@@ -78,7 +78,7 @@ PATH_SCRIPT  = os.path.dirname(__file__)      # Absolute path to the folder wher
 
 # Selecionando a categoria conexoes de tubo e filtrando para nao selecionar os tipos, apenas instancias
 conexoesDeTubo = FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_PipeFitting).WhereElementIsNotElementType()
-nomeParametroAninhado = "PRJ_HDS_Tipo de sistema"
+nomeParametroIncorporado = "Abreviatura do sistema"
 nomeParametroHospedeiro = "PRJ_HDS_Tipo de sistema"
 
 # ╔═╗╦ ╦╔╗╔╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
@@ -112,7 +112,7 @@ if __name__ == '__main__':
     t.Start()  # <- Transaction Start
     #- CHANGES TO REVIT PROJECT HERE
 
-    acertandoLuvas = inserir_parametro_aninhado(conexoesDeTubo, nomeParametroHospedeiro, nomeParametroAninhado)
+    acertandoLuvas = inserir_parametro_aninhado(conexoesDeTubo, nomeParametroHospedeiro, nomeParametroIncorporado)
 
     t.Commit()  # <- Transaction End
 
