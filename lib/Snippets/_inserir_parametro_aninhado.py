@@ -14,7 +14,7 @@ def inserir_parametro_aninhado(instancias, nomeParametroHospedeiro, nomeParametr
             if parametroIncorporado:
                 valorParametroIncorporado = parametroIncorporado.AsString()
 
-                parametroHospedeiro = elementoAninhado.LookupParameter(nomeParametroHospedeiro)
+                parametroHospedeiro = elementoHospedeiro.LookupParameter(nomeParametroHospedeiro)
                 if parametroHospedeiro:
                     parametroHospedeiro.Set(valorParametroIncorporado)
                 contador += 1
