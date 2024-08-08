@@ -1,7 +1,7 @@
 
 from Autodesk.Revit.DB import Transaction
 
-def inserir_parametro_aninhado(instancias, nomeParametroHospedeiro, nomeParametroAninhado):
+def inserir_parametro_aninhado(instancias, nomeParametroHospedeiro, nomeParametroIncorporado):
 
     contador = 0
     for elemento in instancias:
@@ -10,13 +10,13 @@ def inserir_parametro_aninhado(instancias, nomeParametroHospedeiro, nomeParametr
             elementoAninhado = elemento
             elementoHospedeiro = elemento.SuperComponent
 
-            parametroHospedeiro = elementoHospedeiro.LookupParameter(nomeParametroHospedeiro)
-            if parametroHospedeiro:
-                valorParametroHospedeiro = parametroHospedeiro.AsString()
+            parametroIncorporado = elementoHospedeiro.LookupParameter(nomeParametroIncorporado)
+            if parametroIncorporado:
+                valorParametroIncorporado = parametroIncorporado.AsString()
 
-                parametroAninhado = elementoAninhado.LookupParameter(nomeParametroAninhado)
-                if parametroAninhado:
-                    parametroAninhado.Set(valorParametroHospedeiro)
+                parametroHospedeiro = elementoAninhado.LookupParameter(nomeParametroHospedeiro)
+                if parametroHospedeiro:
+                    parametroHospedeiro.Set(valorParametroIncorporado)
                 contador += 1
 
     return contador
