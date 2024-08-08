@@ -112,11 +112,11 @@ if __name__ == '__main__':
     t.Start()  # <- Transaction Start
     #- CHANGES TO REVIT PROJECT HERE
 
-    inserir_parametro_aninhado(conexoesDeTubo, nomeParametroHospedeiro, nomeParametroAninhado)
+    acertandoLuvas = inserir_parametro_aninhado(conexoesDeTubo, nomeParametroHospedeiro, nomeParametroAninhado)
 
     t.Commit()  # <- Transaction End
 
     # Notify user that script is complete.
     print('-' * 50)
-    print('Script is finished.')
+    print('Script is finished {} Luvas Alteradas.'.format(acertandoLuvas))
     print('Template has been developed by Erik Frits.')
