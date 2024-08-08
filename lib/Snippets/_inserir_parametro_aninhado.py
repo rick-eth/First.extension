@@ -5,7 +5,7 @@ def inserir_parametro_aninhado(instancias, nomeParametroHospedeiro, nomeParametr
 
     contador = 0
     for elemento in instancias:
-        if elemento.SuperComponent():
+        if elemento.SuperComponent:
             elementoAninhado = elemento
             elementoHospedeiro = elemento.SuperComponent
 
