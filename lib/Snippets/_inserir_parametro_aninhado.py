@@ -12,7 +12,7 @@ def inserir_parametro_aninhado(instancias, nomeParametroHospedeiro, nomeParametr
 
             parametroHospedeiro = elementoHospedeiro.LookupParameter(nomeParametroHospedeiro)
             if parametroHospedeiro:
-                valorParametroHospedeiro = parametroHospedeiro.asString()
+                valorParametroHospedeiro = parametroHospedeiro.AsString()
 
                 parametroAninhado = elementoAninhado.LookupParameter(nomeParametroAninhado)
                 if parametroAninhado:
