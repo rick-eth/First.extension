@@ -78,8 +78,8 @@ PATH_SCRIPT  = os.path.dirname(__file__)      # Absolute path to the folder wher
 
 # Selecionando a categoria conexoes de tubo e filtrando para nao selecionar os tipos, apenas instancias
 conexoesDeTubo = FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_PipeFitting).WhereElementIsNotElementType()
-nomeParametroAninhado = "Abreviatura do Sistema"
-nomeParametroHospedeiro = "Abreviatura do Sistema"
+nomeParametroAninhado = "Abreviatura do sistema"
+nomeParametroHospedeiro = "Abreviatura do sistema"
 
 # ╔═╗╦ ╦╔╗╔╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
 # ╠╣ ║ ║║║║║   ║ ║║ ║║║║╚═╗
